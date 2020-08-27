@@ -1,4 +1,4 @@
-# 下記を使用する私的制作環境
+# 私的制作環境
 ## gulp4で下記を自動化
 - Pug
 - Sass(scss)
@@ -7,4 +7,4 @@
 - Babel
 - ESLint
 ### Start!
-ローカルにプロジェクトフォルダをクローン後、`yarn install`
+ローカルにプロジェクトフォルダをクローン後、`yarn install`だ！！！
