@@ -76,6 +76,7 @@ function startAppServer() {
   watch('./src/**/*.pug').on('change', server.reload);
   watch('./src/**/*.scss', styles);
   watch('./src/**/*.scss').on('change', server.reload);
+  watch('./src/**/*.js', lint);
   watch('./src/**/*.js', scripts);
   watch('./src/**/*.js').on('change', server.reload);
 }
