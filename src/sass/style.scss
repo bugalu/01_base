@@ -458,13 +458,13 @@ img {
 }
 /* global-nav
    ------------------------------------------------------ */
-.l-header__g-nav {
+.l-header__nav {
   float: right;
 }
-.l-header__g-nav-list {
+.l-header__nav-list {
   overflow: hidden;
 }
-.l-header__g-nav-item {
+.l-header__nav-item {
   float: left;
 }
 /* main
@@ -482,36 +482,57 @@ img {
 /* ======================================================
    Object(装飾と内部配置) *ページ内配置は'Layout'に記述
   ====================================================== */
-/* header
+/* Component(複数箇所で使い回す)
    ------------------------------------------------------ */
-.o-header {
+/**
+* heading
+*/
+/**
+ * button
+ */
+/**
+ * card
+ */
+/**
+ * media
+ */
+
+/* Project(一回だけ)
+   ------------------------------------------------------ */
+/**
+ * header
+ */
+.p-header {
   position: relative;
 }
-/* global-nav
-   ------------------------------------------------------ */
-.o-header__g-nav {
+
+/**
+ * global-navigation
+ */
+.p-header__nav {
   position: absolute;
   top: 50%;
   right: 0%;
   transform: translateY(-50%);
 }
-.o-header__g-nav-item + .o-header__g-nav-item {
+.p-header__nav-item + .p-header__nav-item {
   margin-left: 1rem;
 }
-/* hero
-   ------------------------------------------------------ */
-/* heading
-   ------------------------------------------------------ */
-/* logo
-   ------------------------------------------------------ */
-/* card
-   ------------------------------------------------------ */
-/* media
-   ------------------------------------------------------ */
-/* button
-   ------------------------------------------------------ */
-/* footer
-   ------------------------------------------------------ */
-.o-footer {
+
+/**
+ * hero
+ */
+
+/**
+ * logo
+ */
+
+/**
+ * footer
+ */
+.p-footer {
   text-align: center;
+}
+.p-footer__address {
+  display: inline-block;
 }
